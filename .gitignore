@@ -1,0 +1,7 @@
+.vim/dein/
+*.o
+*.swp
+GPATH
+GTAGS
+GRTAGS
+

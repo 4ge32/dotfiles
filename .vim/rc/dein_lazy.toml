@@ -1,0 +1,6 @@
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+on_ft = 'python'
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
