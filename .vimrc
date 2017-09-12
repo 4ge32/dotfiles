@@ -9,12 +9,17 @@ function! Grun()
 	:!g++ -std=c++11 -o %:r % -Wall -O2 -g -DDEBUG
 endfunction
 
+function! Nspace()
+	:%s/ *$//
+endfunction
+
 :set encoding=utf-8
 :set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 :set fileformats=unix,dos,mac
 
 command! Gcc call Run()
 command! Gpp call Grun()
+command! Nsp call Nspace()
 
 set clipboard=unnamed,autoselect
 
@@ -83,6 +88,11 @@ let g:quickrun_config["cpp"] = {
 	\ "type" : "cpp",
 	\ "command" : "clang",
 	\ "cmdopt" : "-O2 -lm",
+\}
+
+let g:quickrun_config["python"] = {
+	\ "type" : "python",
+	\ "command" : "python3",
 \}
 
 
