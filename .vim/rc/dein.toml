@@ -4,3 +4,5 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/vimproc'
 
+[[plugins]]
+repo = 'Shougo/vimshell'
