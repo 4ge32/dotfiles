@@ -1,0 +1,3 @@
+vimproc -> need make
+apt install vim-gnome (-lua to +lua)
+

@@ -6,3 +6,6 @@ repo = 'Shougo/vimproc'
 
 [[plugins]]
 repo = 'Shougo/vimshell'
+
+[[plugins]]
+repo = 'Shougo/neocomplete'
