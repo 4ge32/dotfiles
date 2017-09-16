@@ -29,6 +29,7 @@ set clipboard=unnamed,autoselect
 :set number
 
 autocmd BufNewFile  *.c           0r ~/.vim/skeleton.c
+autocmd BufNewFile  *.cpp         0r ~/.vim/skeleton.cpp
 autocmd BufNewFile,BufRead *.c    set cindent
 autocmd BufNewFile,BufRead *.cpp  set cindent
 autocmd BufNewFile,BufRead *.txt  set nonumber
@@ -39,6 +40,8 @@ map <C-h> :Gtags -f %<CR>
 map <C-j> :GtagsCursor<CR>
 map <C-n> :cn<CR>
 map <C-p> :cp<CR>
+
+"VimShell
 
 " binary edit mode (vim -b
 augroup BinaryXXD
@@ -62,7 +65,6 @@ augroup END
 " For Python
 " Change Character Color
 autocmd BufNewFile,BufRead *.py  set list lcs=tab:\|\ 
-
 
 " quickrun
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"

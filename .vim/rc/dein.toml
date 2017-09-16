@@ -9,3 +9,6 @@ repo = 'Shougo/vimshell'
 
 [[plugins]]
 repo = 'Shougo/neocomplete'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
