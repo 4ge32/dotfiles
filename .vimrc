@@ -1,6 +1,6 @@
 function! Run()
 	:w
-	:!clang++ -O2 % -o %:r -lm
+	:!clang -O2 % -o %:r -lm
 	:q
 endfunction
 
@@ -42,6 +42,7 @@ map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
 "VimShell
+map <space>s :vnew<CR>:VimShell<CR>
 
 " binary edit mode (vim -b
 augroup BinaryXXD
