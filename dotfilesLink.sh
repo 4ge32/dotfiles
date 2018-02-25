@@ -10,4 +10,5 @@ ln -sf ~/dotfiles/.gitignore ~/.gitignore
 
 cp -rv .vim/plugin ~/.vim
 cp -rv .vim/rc  ~/.vim
-cp -v skelton.c ~/.vim
+cp -v skeleton.c ~/.vim
+cp -v skeleton.cpp ~/.vim
