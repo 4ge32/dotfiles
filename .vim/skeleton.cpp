@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#define DEBUG (cout << "Sehen Sie mich!" << endl)
+#define BUG (cout << "Sehen Sie mich!" << endl)
 
 int main()
 {
