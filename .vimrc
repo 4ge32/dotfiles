@@ -17,11 +17,14 @@ endfunction
 :set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 :set fileformats=unix,dos,mac
 
+:set t_Co=256
+
 command! Gcc call Run()
 command! Gpp call Grun()
 command! Nsp call Nspace()
 
 set clipboard=unnamed,autoselect
+colorscheme ron
 
 "For C/C++ programming
 :set autoindent

@@ -7,6 +7,7 @@ ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/.vim ~/.vim
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
+ln -sf ~/dotfiles/.byobu ~/.byobu
 
 cp -rv .vim/plugin ~/.vim
 cp -rv .vim/rc  ~/.vim
