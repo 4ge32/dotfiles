@@ -35,7 +35,8 @@ autocmd BufNewFile  *.c           0r ~/.vim/skeleton.c
 autocmd BufNewFile  *.cpp         0r ~/.vim/skeleton.cpp
 autocmd BufNewFile,BufRead *.c    set cindent
 autocmd BufNewFile,BufRead *.cpp  set cindent
-autocmd BufNewFile,BufRead *.txt  set nonumber
+autocmd BufNewFile,BufRead *.log  set hlsearch
+"autocmd BufNewFile,BufRead *.txt  set nonumber
 
 "Related Gtags
 map <C-g> :Gtags
