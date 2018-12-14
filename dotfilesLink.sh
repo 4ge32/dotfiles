@@ -34,8 +34,18 @@ if [ $ditro = "ubuntu" ]; then
   sudo apt install -y curl
   sudo apt install -y vim
   sudo apt install -y byobu
+  sudo apt install -y global
 else
   echo
+fi
+
+which htop > /dev/null 2>&1
+if [ $? -eq 1 ]; then
+  echo "rust has already been installed"
+else
+  curl https://sh.rustup.rs -sSf | sh
+  cargo install rustfmt
+  cargo install racer
 fi
 
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
@@ -51,3 +61,4 @@ cp -rv .vim/plugin ~/.vim
 cp -rv .vim/rc  ~/.vim
 cp -v .vim/skeleton.c ~/.vim
 cp -v .vim/skeleton.cpp ~/.vim
+cp -v .vim/skeleton.rs ~/.vim

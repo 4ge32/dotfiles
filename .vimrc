@@ -6,7 +6,7 @@ endfunction
 
 function! Grun()
 	:w
-	:!g++ -std=c++11 -o %:r % -Wall -O2 -g -DDEBUG
+	:!g++ -std=c++17 -o %:r % -Wall -O2 -g -DDEBUG
 endfunction
 
 function! Nspace()
@@ -16,6 +16,8 @@ endfunction
 :set encoding=utf-8
 :set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 :set fileformats=unix,dos,mac
+
+:set hlsearch
 
 colorscheme ron
 
@@ -33,6 +35,7 @@ colorscheme ron
 
 autocmd BufNewFile  *.c           0r ~/.vim/skeleton.c
 autocmd BufNewFile  *.cpp         0r ~/.vim/skeleton.cpp
+autocmd BufNewFile  *.rs          0r ~/.vim/skeleton.rs
 autocmd BufNewFile,BufRead *.c    set cindent
 autocmd BufNewFile,BufRead *.cpp  set cindent
 autocmd BufNewFile,BufRead *.txt  set nonumber
@@ -45,7 +48,7 @@ map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
 "VimShell
-map <space>s :vnew<CR>:VimShell<CR>
+map <space>s :set splitbelow<CR>:15new<CR>:VimShell<CR>
 
 " binary edit mode (vim -b
 augroup BinaryXXD
@@ -69,6 +72,8 @@ augroup END
 " For Python
 " Change Character Color
 autocmd BufNewFile,BufRead *.py  set list lcs=tab:\|\ 
+
+autocmd BufNewFile,BufRead *.rs let g:rustfmt_autosave = 1
 
 " quickrun
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
