@@ -42,6 +42,8 @@ autocmd BufNewFile,BufRead *.log  set hlsearch
 autocmd BufNewFile,BufRead *.sh   set shiftwidth=2
 "autocmd BufNewFile,BufRead *.txt  set nonumber
 
+let g:rustfmt_autosave=1
+
 "Related Gtags
 map <C-g> :Gtags
 map <C-h> :Gtags -f %<CR>
@@ -75,8 +77,6 @@ augroup END
 " Change Character Color
 autocmd BufNewFile,BufRead *.py  set list lcs=tab:\|\ 
 
-autocmd BufNewFile,BufRead *.rs let g:rustfmt_autosave = 1
-
 " quickrun
 nnoremap <expr><silent> <C-c> quickrun#is_running() ? quickrun#sweep_sessions() : "\<C-c>"
 nmap <F9> :QuickRun<CR>
@@ -89,7 +89,6 @@ let g:quickrun_config = {
 	\ "outputter/buffer/split" : ":vnew"
 \}
 \}
-
 
 let g:quickrun_config["c"] = {
 	\ "type" : "c",
