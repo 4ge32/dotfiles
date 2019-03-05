@@ -57,8 +57,8 @@ ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/dotfiles/.byobu ~/.byobu
 
-cp -rv .vim/plugin ~/.vim
-cp -rv .vim/rc  ~/.vim
-cp -v .vim/skeleton.c ~/.vim
-cp -v .vim/skeleton.cpp ~/.vim
-cp -v .vim/skeleton.rs ~/.vim
+ln -sf .vim/plugin ~/.vim
+ln -sf .vim/rc  ~/.vim
+ln -sf .vim/skeleton.c ~/.vim
+ln -sf .vim/skeleton.cpp ~/.vim
+ln -sf .vim/skeleton.rs ~/.vim
