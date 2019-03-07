@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <list>
 #include <algorithm>
+#include <cassert>
+#include <string>
 
 using namespace std;
-
-#define BUG (cout << "Sehen Sie mich!" << endl)
+using ll = long long;
 
 int main()
 {
