@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Fumiya Shigemitsu
-	email = gyro.scaremonger@gmail.com
+	email = shfy1014@gmail.com
 [core]
 editor = vim
 excludesfile = ~/.gitignore
