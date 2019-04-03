@@ -35,7 +35,11 @@ if [ $ditro = "ubuntu" ]; then
   sudo apt install -y vim
   sudo apt install -y byobu
   sudo apt install -y global
+  sudo apt install -y xsel
 else
+  # gcc
+  # vim
+  # xsel
   echo
 fi
 
