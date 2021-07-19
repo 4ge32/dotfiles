@@ -56,6 +56,7 @@ git clone https://github.com/BurntSushi/ripgrep
 cd ripgrep
 cargo build --release
 cargo install ripgrep
+cd ..
 
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.vim/dein
