@@ -120,3 +120,4 @@ stty stop undef
 
 export PATH=$PATH:$HOME/.cargo/bin:$HOME/bin:$HOME/.opam/4.06.0/bin
 alias pbcopy='xsel --clipboard --input'
+set bell-style none

@@ -151,3 +151,5 @@ if dein#check_install()
 endif
 
 ""End dein Scripts-------------------------
+
+set belloff=all
